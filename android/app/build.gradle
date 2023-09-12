@@ -29,7 +29,7 @@ apply plugin: 'kotlin-android'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
 android {
-    namespace "com.example.job_test_project"
+    namespace "voulanshe7k.roumezbet"
     compileSdkVersion 33
     ndkVersion flutter.ndkVersion
 
