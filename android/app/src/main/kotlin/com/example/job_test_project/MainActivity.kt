@@ -1,4 +1,4 @@
-package com.example.job_test_project
+package voulanshe7k.roumezbet
 
 import io.flutter.embedding.android.FlutterActivity
 

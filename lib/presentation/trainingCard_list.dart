@@ -57,13 +57,16 @@ class _TrainingCardListState extends State<TrainingCardList> {
               ),
               ElevatedButton(onPressed: (){
                 _loadData();
+                setState(() {
+                  
+                });
               }, child: Text("Search"))
             ],
           ),
         ),
 
 
-        (_trainingModelList == null)
+        ((_trainingModelList == null)||(_trainingModelList!.isEmpty))
             ? Center(child: CircularProgressIndicator())
             : Padding(
               padding: const EdgeInsets.all(8.0),

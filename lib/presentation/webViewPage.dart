@@ -10,13 +10,18 @@ class WebViewPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("WebView"),
+    return WillPopScope(
+      onWillPop: () async{
+        return false;
+      },
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text("WebView"),
+        ),
+        body: WebView(
+          initialUrl: url,
+        )
       ),
-      body: WebView(
-        initialUrl: url,
-      )
     );
   }
 }

@@ -4,3 +4,8 @@ class TrainingListEvent
 {
   
 }
+
+class LoadTraininList extends TrainingListEvent
+{
+
+}
